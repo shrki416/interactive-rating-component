@@ -2,12 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="assets/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>FEM | Interactive Rating Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <div class="wrapper">
+      <header>
+        <img src="./assets/icon-star.svg" alt="logo" class="logo" />
+        <h1 class="visually-hidden">Interactive Rating Component</h1>
+      </header>
+      <main>
+        <form action="">
+          <h2>How did we do?</h2>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div class="ratings-btns">
+            <div class="ratings-btn">1</div>
+            <div class="ratings-btn">2</div>
+            <div class="ratings-btn">3</div>
+            <div class="ratings-btn">4</div>
+            <div class="ratings-btn">5</div>
+          </div>
+          <input type="submit" value="Submit" class="submit" />
+        </form>
+      </main>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
