@@ -12,18 +12,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/style.css" />
-    <!-- <style>
-      input[type="radio"] {
-        width: 50px;
-        height: 50px;
-      }
-
-      label {
-        display: inline-block;
-        margin-right: 10px;
-        font-size: 1.2em;
-      }
-    </style> -->
   </head>
   <body>
     <div class="wrapper">
@@ -38,60 +26,56 @@
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
-          <div class="ratings-btns">
-            <div class="ratings-btn">1</div>
-            <div class="ratings-btn">2</div>
-            <div class="ratings-btn">3</div>
-            <div class="ratings-btn">4</div>
-            <div class="ratings-btn">5</div>
-          </div>
+          <fieldset class="ratings-btns">
+            <legend class="visually-hidden">Please rate from 1 to 5:</legend>
+            <label for="rating-1" class="visually-hidden">1</label>
+            <input
+              type="radio"
+              name="rating"
+              aria-label="Rate 1"
+              value="1"
+              id="rating-1"
+              class="ratings-btn"
+            />
+            <label for="rating-2" class="visually-hidden">2</label>
+            <input
+              type="radio"
+              name="rating"
+              aria-label="Rate 2"
+              value="2"
+              id="rating-2"
+              class="ratings-btn"
+            />
+            <label for="rating-3" class="visually-hidden">3</label>
+            <input
+              type="radio"
+              name="rating"
+              aria-label="Rate 3"
+              value="3"
+              id="rating-3"
+              class="ratings-btn"
+            />
+            <label for="rating-4" class="visually-hidden">4</label>
+            <input
+              type="radio"
+              name="rating"
+              aria-label="Rate 4"
+              value="4"
+              id="rating-4"
+              class="ratings-btn"
+            />
+            <label for="rating-5" class="visually-hidden">5</label>
+            <input
+              type="radio"
+              name="rating"
+              aria-label="Rate 5"
+              value="5"
+              id="rating-5"
+              class="ratings-btn"
+            />
+          </fieldset>
           <input type="submit" value="Submit" class="submit" />
         </form>
-        <!-- <form>
-          <fieldset>
-            <legend>Please rate from 1 to 5:</legend>
-            <input
-              type="radio"
-              id="rating1"
-              name="rating"
-              value="1"
-              aria-label="Rate 1"
-            />
-            <label for="rating1">1</label>
-            <input
-              type="radio"
-              id="rating2"
-              name="rating"
-              value="2"
-              aria-label="Rate 2"
-            />
-            <label for="rating2">2</label>
-            <input
-              type="radio"
-              id="rating3"
-              name="rating"
-              value="3"
-              aria-label="Rate 3"
-            />
-            <label for="rating3">3</label>
-            <input
-              type="radio"
-              id="rating4"
-              name="rating"
-              value="4"
-              aria-label="Rate 4"
-            />
-            <label for="rating4">4</label>
-            <input
-              type="radio"
-              id="rating5"
-              name="rating"
-              value="5"
-              aria-label="Rate 5"
-            />
-            <label for="rating5">5</label>
-          </fieldset>
-        </form> -->
       </main>
     </div>
     <script type="module" src="/main.js"></script>

@@ -182,6 +182,11 @@ p {
   color: var(--primary);
 }
 
+fieldset {
+  border: transparent;
+  padding: 0;
+}
+
 @media (max-width: 375px) {
   .wrapper {
     padding: 24px;
