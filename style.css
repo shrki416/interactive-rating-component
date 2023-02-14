@@ -156,7 +156,7 @@ body {
 .form-label {
   cursor: pointer;
   position: relative;
-  background-color: var(--blue-900);
+  background-color: var(--blue-800);
   color: var(--gray-200);
   width: 3.5rem;
   height: 3.5rem;
