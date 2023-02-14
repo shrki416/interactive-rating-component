@@ -20,61 +20,71 @@
         <h1 class="visually-hidden">Interactive Rating Component</h1>
       </header>
       <main>
-        <form action="">
-          <h2>How did we do?</h2>
-          <p>
+        <form class="form">
+          <h2 class="form-header">How did we do?</h2>
+          <p class="form-text">
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
-          <fieldset class="ratings-btns">
-            <legend class="visually-hidden">Please rate from 1 to 5:</legend>
-            <label for="rating-1" class="visually-hidden">1</label>
-            <input
-              type="radio"
-              name="rating"
-              aria-label="Rate 1"
-              value="1"
-              id="rating-1"
-              class="ratings-btn"
-            />
-            <label for="rating-2" class="visually-hidden">2</label>
-            <input
-              type="radio"
-              name="rating"
-              aria-label="Rate 2"
-              value="2"
-              id="rating-2"
-              class="ratings-btn"
-            />
-            <label for="rating-3" class="visually-hidden">3</label>
-            <input
-              type="radio"
-              name="rating"
-              aria-label="Rate 3"
-              value="3"
-              id="rating-3"
-              class="ratings-btn"
-            />
-            <label for="rating-4" class="visually-hidden">4</label>
-            <input
-              type="radio"
-              name="rating"
-              aria-label="Rate 4"
-              value="4"
-              id="rating-4"
-              class="ratings-btn"
-            />
-            <label for="rating-5" class="visually-hidden">5</label>
-            <input
-              type="radio"
-              name="rating"
-              aria-label="Rate 5"
-              value="5"
-              id="rating-5"
-              class="ratings-btn"
-            />
+          <fieldset class="form-fieldset">
+            <legend class="visually-hidden">Please choose a rating:</legend>
+            <label for="rating-1" class="form-label">
+              <input
+                type="radio"
+                name="rating"
+                aria-label="Rate 1"
+                value="1"
+                id="rating-1"
+                class="form-input"
+              />
+              <span>1</span>
+            </label>
+            <label for="rating-2" class="form-label">
+              <input
+                type="radio"
+                name="rating"
+                aria-label="Rate 2"
+                value="2"
+                id="rating-2"
+                class="form-input"
+              />
+              <span>2</span>
+            </label>
+            <label for="rating-3" class="form-label">
+              <input
+                type="radio"
+                name="rating"
+                aria-label="Rate 3"
+                value="3"
+                id="rating-3"
+                class="form-input"
+              />
+              <span>3</span>
+            </label>
+            <label for="rating-4" class="form-label">
+              <input
+                type="radio"
+                name="rating"
+                aria-label="Rate 4"
+                value="4"
+                id="rating-4"
+                class="form-input"
+              />
+              <span>4</span>
+            </label>
+            <label for="rating-5" class="form-label">
+              <input
+                type="radio"
+                name="rating"
+                aria-label="Rate 5"
+                value="5"
+                id="rating-5"
+                class="form-input"
+              />
+              <span>5</span>
+            </label>
           </fieldset>
-          <input type="submit" value="Submit" class="submit" />
+          <button type="submit" class="submit" disabled>Submit</button>
         </form>
       </main>
     </div>

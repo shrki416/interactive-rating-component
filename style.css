@@ -10,6 +10,8 @@
   --gray-200: hsl(216, 12%, 54%);
   --blue-800: hsl(213, 19%, 18%);
   --blue-900: hsl(216, 12%, 8%);
+
+  --transition: all 0.3s ease-in-out;
 }
 
 /*
@@ -110,8 +112,7 @@ body {
 
 .wrapper {
   --border-radius: 10px;
-  outline: solid black;
-  padding: 32px;
+  padding: 24px;
   margin: 24px;
   border-radius: calc(var(--border-radius) + 20px);
   max-width: 412px;
@@ -125,11 +126,11 @@ body {
   border-radius: 50%;
 }
 
-form {
+.form {
   display: grid;
 }
 
-h2 {
+.form-header {
   margin-bottom: 15px;
   font-size: 1.75rem;
   line-height: 2.1875rem;
@@ -137,31 +138,65 @@ h2 {
   color: var(--white);
 }
 
-p {
+.form-text {
   font-size: var(--fs-reg);
   font-weight: var(--fw-reg);
   line-height: 1.5rem;
   color: var(--gray-100);
 }
 
-.ratings-btns {
+.form-fieldset {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   place-items: center;
+  border: transparent;
+  padding: 0;
 }
 
-.ratings-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 24px;
-  margin-bottom: 32px;
+.form-label {
   cursor: pointer;
-  border-radius: 50%;
+  position: relative;
+  background-color: var(--blue-900);
   color: var(--gray-200);
-  background-color: var(--blue-800);
-  width: 51px;
-  height: 51px;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  z-index: 3;
+  transition: var(--transition);
+}
+
+.form-label:hover, .form-label:focus {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.form-label > span {
+  z-index: 2;
+}
+
+.form-input {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: 1;
+  transition: var(--transition);
+}
+
+.form-input:checked {
+  background-color: var(--gray-100);
+}
+
+.form-input:checked + span {
+  color: var(--white);
 }
 
 .submit {
@@ -182,19 +217,18 @@ p {
   color: var(--primary);
 }
 
-fieldset {
-  border: transparent;
-  padding: 0;
+.submit:disabled {
+  opacity: 0.5;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 500px) {
   .wrapper {
-    padding: 24px;
+    padding: 32px;
   }
 
-  .ratings-btn {
-    width: 42px;
-    height: 42px;
+  .form-label {
     margin: 24px 0;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 }
