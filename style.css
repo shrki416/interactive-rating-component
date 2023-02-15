@@ -221,6 +221,11 @@ body {
   opacity: 0.5;
 }
 
+.submit:disabled:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
 @media (min-width: 500px) {
   .wrapper {
     padding: 32px;
