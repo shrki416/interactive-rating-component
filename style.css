@@ -233,6 +233,10 @@ body {
   }
 }
 
+.hide {
+  display: none;
+}
+
 .result-container {
   display: grid;
   place-items: center;
