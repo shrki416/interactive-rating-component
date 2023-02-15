@@ -1,7 +1,3 @@
-const ratingsForm = document.querySelector("[data-form]");
-const resultsPage = document.querySelector("[data-result]");
-const resultsText = document.querySelector(".result-container-selection");
-
 let rating;
 
 const ratings = document.querySelectorAll(".form-input");
@@ -14,15 +10,16 @@ submitBtn.addEventListener("click", submitForm);
 
 function submitForm(e) {
   e.preventDefault();
-  console.log("form submitted ✔️");
 
+  const resultsPage = document.querySelector("[data-result]");
+  const ratingsForm = document.querySelector("[data-form]");
   ratingsForm.classList.add("hide");
   resultsPage.classList.remove("hide");
 }
 
 function captureInputValue(e) {
+  const resultsText = document.querySelector(".result-container-selection");
   rating = e.target.value;
-  console.log(rating);
 
   if (rating) {
     submitBtn.disabled = false;

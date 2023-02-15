@@ -260,6 +260,7 @@ body {
 .result-container-header {
   color: var(--white);
   margin-bottom: 8px;
+  font-size: 1.75rem;
 }
 
 .result-container-text {
