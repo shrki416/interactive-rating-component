@@ -232,3 +232,29 @@ body {
     height: 3.5rem;
   }
 }
+
+.result-container {
+  display: grid;
+  place-items: center;
+  font-size: var(--fs-reg);
+  line-height: 1.5rem;
+}
+
+.result-container-selection {
+  color: var(--primary);
+  padding: 8px 16px 6px;
+  border-radius: 22.5px;
+  background-color: var(--blue-800);
+  margin: 32px 0;
+}
+
+.result-container-header {
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.result-container-text {
+  color: var(--gray-100);
+  text-align: center;
+  padding: 0 4px;
+}
